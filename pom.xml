@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.xl</groupId>
+  <artifactId>hbasewebnavi</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <name>hbase web navigator</name>
+  <description>hbase web navigator</description>
+  
+  
+    <dependencies>
+  		<dependency>
+			<groupId>zookeeper</groupId>
+			<artifactId>zookeeper</artifactId>
+			<classifier>cdh3u3</classifier>
+			<version>3.3.4</version>
+		</dependency>
+		<dependency>
+			<groupId>hadoop-core</groupId>
+			<artifactId>hadoop-core</artifactId>
+			<classifier>cdh3u3</classifier>
+			<version>0.20.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hbase</groupId> 
+  			<artifactId>hbase</artifactId> 
+			<version>0.92.1</version> 
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+	        <artifactId>log4j</artifactId>
+	        <version>1.2.15</version>
+		</dependency>
+		<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>4.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>201111</version>
+		</dependency>
+		
+  </dependencies>
+
+   <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.12</version>
+        <configuration>
+          <skipTests>true</skipTests>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

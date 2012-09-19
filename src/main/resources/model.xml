@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Model>
+	<Table name="TEST" rowkey="int">
+		<Column name="PV" 	type="int"  familyName="f" />
+		<Column name="UV"     type="int"   familyName="f"/>
+		<Column name="UPV"     type="int"   familyName="f"/>
+	</Table>
+	
+	<Table name="TEST2" rowkey="int,double">
+		<Column name="PV" type="int"  familyName="f" />
+		<Column name="Money"     type="double"   familyName="f"/>
+	</Table>
+	
+	<Table name="TEST3" rowkey="int,long">
+		<Column name="PV" type="int"  familyName="f" />
+		<Column name="UV" type="int"   familyName="f"/>
+	</Table>
+</Model>
