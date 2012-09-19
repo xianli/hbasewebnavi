@@ -34,4 +34,4 @@ Install this app is very easy,
 2. import the source code in this repository.   
 3. add your own Interpreter.  
 4. export a war and deploy it to any web server.  
-5. give it a try via [http://yourhost/hbasewebnavi/verify.jsp].  
+5. give it a try via [http://yourhost/hbasewebnavi/verify.jsp](http://yourhost/hbasewebnavi/verify.jsp).  
