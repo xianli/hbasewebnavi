@@ -15,13 +15,13 @@ more user friendly than hbase shell, isn't it? :)
 
 #How it works?
 
-I don't want to put many words on the web app as it is simple. The core of the app is a **Interpreter** interface,
+I don't want to put many words on the web app as it is simple. The core of the app is an **Interpreter** interface,
 it has two methods:  
 
 `String interpretRowkey(String tableName, byte[] rowkey);`   
 `String interpretColumnValue(String tableName, byte[] rowkey, byte[] cf, byte[] column, long timestamp, byte[] value);`  
 
-the web app framework will call this two methods to interpret the row key, column value in hbase table and convert them
+the web app framework will call these two methods to interpret the row key, column value in hbase table and convert them
 to human readable string format. 
 
 Since different application stores data in different format, so you may want to add your own **Interpreter**. Please edit below 
